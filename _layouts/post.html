@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<article id="main">
+  <header class="special container">
+    <h2 class="post-title">{{ page.title }}</h2>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
+
+  <section class="style4 wrapper container">
+    {{ content }}
+  </section>
+
+    <footer>
+      <section class="wrapper style1 container special">
+        <div class="row">
+          {% for category in site.categories %}
+          <div class="4u">
+            {% capture category_name %}{{ category | first }}{% endcapture %}
+            <section>
+              <header>
+                <h3>{{ category_name }}</h3>
+              </header>
+              <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+              <footer>
+                <ul class="buttons">
+                  <li><a href="/categories" class="button small">Learn More</a></li>
+                </ul>
+              </footer>
+            </section>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+        {% if page.previous %}
+        <a href="{{ page.previous.url }}" class="post-prev">&larr; Previous post</a> {% endif %}
+        {% if page.next %}
+        <a href="{{ page.next.url }}" class="post-next">Next post &rarr;</a> {% endif %}
+    </footer>
+</article>
