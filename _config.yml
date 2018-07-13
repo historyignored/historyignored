@@ -1,14 +1,16 @@
 # Site settings
 title: History Ignored
-email: your-email@domain.com
+email: historyignored@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  This is a site to articulate history that has been ignored or avoided.
+  Some history secrets have been left out of conventional history, and I would like
+  to display some of those hidden details. This is not a site for conspiracies, but rather a 
+  site for historical facts that have been avoided. When you are finished reading, you can
+  come to your own conclusions as to why this information has been witheld from conventional history.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://locahost:4000" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://historyignored.com" # the base hostname & protocol for your site
+twitter_username: historyignored
+github_username:  historyignored
 
 # Build settings
 markdown: kramdown
